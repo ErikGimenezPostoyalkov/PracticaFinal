@@ -1,0 +1,129 @@
+/*HEADER*/
+body, h1, h2, h4, p, ul, li, form, table {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url('https://imgs.search.brave.com/EwiZlOVYrYT7llNE5CQAAoGQy3VRgGwizKFy67sHJaE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMy/MDgxNTIwMC9lcy9m/b3RvL2ZvbmRvLW5l/Z3JvLWRlLXBhcmVk/LXBhcmEtZWwtZGlz/ZSVDMyVCMW8tZm9u/ZG8tZGUtdGV4dHVy/YS1uZWdyYS1kZS1w/aWVkcmEuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVhCaTQw/NXJaN3RKZVVGMFFo/VHI1TjVGYlY5eVdE/RHNqbXByTWpRaWVG/SVk9');
+  background-size: cover;
+  color: white;
+  padding: 7px;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 10px;
+  position: sticky;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#titulo {
+  font-size: 20px;
+}
+
+#apartado1 {
+  grid-column: 4 / span 1;
+  font-size: 14px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#apartado2 {
+  grid-column: 5 / span 1;
+  font-size: 14px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#apartado3 {
+  grid-column: 6 / span 1;
+  font-size: 14px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#apartado1:hover, #apartado2:hover, #apartado3:hover {
+  font-size: 16px;
+}
+
+header input[type="text"] {
+  grid-column: 9 / span 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/*IMAGEN INICIAL*/
+nav {
+  background-image: url('C:/Users/El Cabra/Desktop/Telecos/3r/Enginyería de Llocs Web/app-ropa/app-ropa/src/assets/header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-color: #333;
+  padding: 10px;
+}
+
+/*BOTÓN CLIENTES*/
+#suscripciones {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease-in-out;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+}
+
+#suscripciones:hover {
+  background-color: #2980b9;
+}
+
+/*SECCIONES*/
+.apartado {
+  background-image: url('https://imgs.search.brave.com/EwiZlOVYrYT7llNE5CQAAoGQy3VRgGwizKFy67sHJaE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMy/MDgxNTIwMC9lcy9m/b3RvL2ZvbmRvLW5l/Z3JvLWRlLXBhcmVk/LXBhcmEtZWwtZGlz/ZSVDMyVCMW8tZm9u/ZG8tZGUtdGV4dHVy/YS1uZWdyYS1kZS1w/aWVkcmEuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVhCaTQw/NXJaN3RKZVVGMFFo/VHI1TjVGYlY5eVdE/RHNqbXByTWpRaWVG/SVk9');
+  background-size: cover;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.productos {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 292px);
+  grid-template-rows: repeat(1, 400px);
+  gap: 7px;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  transition: box-shadow 0.3s ease;
+}
+
+.imagen:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+/*FOOTER*/
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

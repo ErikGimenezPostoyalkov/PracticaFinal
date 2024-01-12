@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Cliente</title>
+</head>
+<header>
+  <h4 id="titulo"><a (click)="irAHome()">LOVE NOOD</a></h4>
+  <input type="text" placeholder="Escribe aquí..." (click)="irABuscador()">
+</header>
+<body>
+
+  <div id="formulario">
+    <h2>Sign Up here to follow our latest updates!</h2>
+    <label for="nombreInput">Nombre:</label>
+    <input #nombreInput type="text" name="nombre"/>
+
+    <label for="passwordInput">Contraseña:</label>
+    <input #passwordInput type="password" name="password" (input)="onPasswordInput()"/>
+
+    <p class="avisos">·Al Menos 10 caracteres.</p>
+    <p class="avisos">·Al Menos un número.</p>
+    <p class="avisos">·Al Menos una mayúscula.</p>
+
+    <button [disabled]="passwordInputInvalid" (click)="agregarCliente()">Sign Up</button>
+    <div id="login" (click)="irALogin()">Log In here!</div>
+  </div>
+
+</body>
+<footer>
+  © 2023 LOVE NOOD, All rights reserved
+</footer>
+</html>

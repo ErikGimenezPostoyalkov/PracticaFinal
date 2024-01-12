@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "es">
+<link rel = "stylesheet" href = "home.component.css">
+
+<head>
+    <title>Tienda de Ropa</title>
+    <meta charset = "utf-8">
+    <link rel ="shortcut icon" type = "image/web" href ="https://imgs.search.brave.com/R-uIaL2Sf_8dmk7e5hW4xQrV_4It3JaLOVAsCX80ySw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvMTYvMTY0MzYu/cG5n"/>
+</head>
+
+<body>
+    <a id="lovenood"></a>
+    <header>
+      <h4 id = "titulo"><a href ="/home#lovenood">LOVE NOOD</a></h4>
+      <h4 id = "apartado1"><a href="/home#sudaderas">SUDADERAS</a></h4>
+      <h4 id = "apartado2"><a href="/home#camisas">CAMISETAS</a></h4>
+      <h4 id = "apartado3"><a href="/home#pantalones">PANTALONES</a></h4>
+      <input type="text" placeholder="Escribe aquí..." (click)="irABuscador()">
+    </header>
+
+    <nav></nav>
+    <main>
+        <div (click)="irAClientes()" id="suscripciones">Sign Up here!</div>
+        <div id="sudaderas"></div>
+        <p class = "apartado">Sudaderas</p>
+        <section class="productos">
+            <img (click)="irAProducto('Sudadera Negra')" class="imagen" src= "assets/Sudadera Negra.png" alt = "Imagen">
+            <img (click)="irAProducto('Sudadera sin Capucha')" class="imagen" src= "assets/Sudadera sin Capucha.png" alt = "Imagen">
+            <img (click)="irAProducto('Sudadera Marron')" class="imagen" src= "assets/Sudadera Marron.png" alt = "Imagen">
+            <img (click)="irAProducto('Sudadera Beis')" class="imagen" src= "assets/Sudadera Beis.png" alt = "Imagen">
+            <img (click)="irAProducto('Sudadera Bleach')" class="imagen" src= "assets/Sudadera Bleach.png" alt = "Imagen">
+        </section>
+
+        <div id="camisas"></div>
+        <p class="apartado">Camisetas</p>
+        <section class = "productos">
+            <img (click)="irAProducto('Camiseta Blanca Basica')" class="imagen" src= "assets/Camiseta Blanca Basica.png" alt = "Imagen">
+            <img (click)="irAProducto('Camiseta Van Gogh')" class="imagen" src= "assets/Camiseta Van Gogh.png" alt = "Imagen">
+            <img (click)="irAProducto('Camiseta Lovers')" class="imagen" src= "assets/Camiseta Lovers.png" alt = "Imagen">
+            <img (click)="irAProducto('Camiseta Lettering')" class="imagen" src= "assets/Camiseta Lettering.png" alt = "Imagen">
+            <img (click)="irAProducto('Camiseta Cocodrilo')" class="imagen" src= "assets/Camiseta Cocodrilo.png" alt = "Imagen">
+        </section>
+
+        <div id="pantalones"></div>
+        <p class="apartado">Pantalones</p>
+        <section class = "productos">
+          <img (click)="irAProducto('Pantalones Casual')" class="imagen" src= "assets/Pantalones Casual.png" alt = "Imagen">
+          <img (click)="irAProducto('Pantalones Jogger')" class="imagen" src= "assets/Pantalones Jogger.png" alt = "Imagen">
+          <img (click)="irAProducto('Pantalones Cargo')" class="imagen" src= "assets/Pantalones Cargo.png" alt = "Imagen">
+          <img (click)="irAProducto('Pantalones Cremallera')" class="imagen" src= "assets/Pantalones Cremallera.png" alt = "Imagen">
+          <img (click)="irAProducto('Pantalones Chandal')" class="imagen" src= "assets/Pantalones Chandal.png" alt = "Imagen">
+      </section>
+
+    </main>
+
+    <footer>
+      © 2023 LOVE NOOD, All rights reserved
+    </footer>
+
+</body>
+
+</html>

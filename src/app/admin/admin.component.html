@@ -1,0 +1,36 @@
+<header>
+  <h4 id="titulo"><a (click)="irAHome()">LOVE NOOD</a></h4>
+  <input type="text" placeholder="Escribe aquí..." (click)="irABuscador()">
+</header>
+<body>
+<div class="admin-container">
+  <h2>Añadir Producto</h2>
+
+  <form (submit)="agregarProducto()">
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input #nombreInput type="text" id="nombre" required>
+    </div>
+
+    <div>
+      <label for="precio">Precio:</label>
+      <input #precioInput type="number" id="precio" required>
+    </div>
+
+    <div>
+      <label for="categoria">Categoría:</label>
+      <input #categoriaInput type="text" id="categoria" required>
+    </div>
+
+    <div>
+      <label for="enlace">Enlace:</label>
+      <input #enlaceInput type="text" id="enlace" required>
+    </div>
+
+    <button type="submit">Agregar Producto</button>
+  </form>
+</div>
+</body>
+<footer>
+  © 2023 LOVE NOOD, All rights reserved
+</footer>
